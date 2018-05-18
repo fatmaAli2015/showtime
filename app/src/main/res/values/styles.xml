@@ -1,0 +1,39 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="colorPrimaryDark">@android:color/background_light
+        </item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.ActionBar.Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@android:color/transparent</item>
+        <!--<item name="android:windowTranslucentStatus">true</item>  API 19 -->
+        <item name="android:popupMenuStyle">@style/CustomColorText</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:actionOverflowButtonStyle">@style/CustomColorButtonOverFlow</item>
+    </style>
+
+    <style name="Action" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="CustomColorText" parent="@android:style/TextAppearance.Holo.Widget.IconMenu.Item">
+        <item name="android:iconTint" tools:targetApi="o">#fff</item>
+        <item name="android:colorBackground">#fff</item>
+        <item name="android:color">#fff</item>
+    </style>
+
+    <style name="CustomColorButtonOverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@android:drawable/ic_search_category_default</item>
+    </style>
+
+
+</resources>

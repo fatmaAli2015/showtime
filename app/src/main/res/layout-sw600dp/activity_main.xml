@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.santalu.diagonalimageview.DiagonalImageView
+            android:id="@+id/bg1"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg1"
+            app:di_borderColor="@android:color/holo_orange_light"
+            app:di_borderEnabled="true"
+            app:di_borderSize="8dp"
+            app:di_direction="right"
+            app:di_overlap="50dp"
+            app:di_position="bottom"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:layout_marginEnd="132dp"
+            android:layout_marginLeft="132dp"
+            android:layout_marginRight="132dp"
+            android:layout_marginStart="132dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/playicon"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="@+id/bg1"
+            app:layout_constraintHorizontal_bias="0.286"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/bg1"
+            app:layout_constraintVertical_bias="0.588" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:id="@+id/floatingHeart"
+            android:padding="80dp"
+            android:src="@drawable/ic_favorite"
+            app:layout_constraintBottom_toBottomOf="@+id/bg1"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bg1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boxshape"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/ic_like" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    android:textSize="19dp"
+                    android:text="95% VOTES" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Super Troopers 2 (2018)"
+                    android:textColor="#f76e04"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comedy, Crime, Mystery | 20 April 2018 (USA)" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="   When a border dispute arises between the U.S. and
+Canada. the Super Troopers are tasked witg establishing a Highway Patrol station in the disputed area."
+                    android:textColor="#3d3c3c" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.santalu.diagonalimageview.DiagonalImageView
+            android:id="@+id/bg2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/crop"
+            app:di_borderColor="@android:color/holo_orange_light"
+            app:di_borderEnabled="true"
+            app:di_borderSize="5dp"
+            app:di_direction="left"
+            app:di_overlap="35dp"
+            app:di_position="top"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            tools:ignore="MissingConstraints" />
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
